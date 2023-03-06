@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "free-move",
+  "version": "${version}",
+
+  "name": "Free Move",
+  "description": "Allows usage of movement keybinds while in a GUI",
+  "authors": [
+    "Forite"
+  ],
+  "license": "MIT",
+  "icon": "assets/free_move/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "forite.free_move.client.ClientMain"
+    ]
+  },
+  "mixins": [
+    "free_move.mixins.json"
+  ],
+  "accessWidener": "free_move.accesswidener",
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  }
+}
